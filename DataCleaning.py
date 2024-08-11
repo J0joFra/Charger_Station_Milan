@@ -16,8 +16,8 @@ print(df.info())
 print(df.describe())
 
 #Totale della popolazione per ciascuna ipotesi
-df['Totale Ipotesi alta'] = df.groupby(['Anno', 'Quartiere', 'Genere'])['Ipotesi alta'].transform('sum')
-df['Totale Ipotesi media'] = df.groupby(['Anno', 'Quartiere', 'Genere'])['Ipotesi media'].transform('sum')
-df['Totale Ipotesi bassa'] = df.groupby(['Anno', 'Quartiere', 'Genere'])['Ipotesi bassa'].transform('sum')
+df['Tot Ipotesi alta'] = df.groupby(['Anno', 'Quartiere',])['Ipotesi alta'].transform('sum')
+df['Tot Ipotesi media'] = df.groupby(['Anno', 'Quartiere'])['Ipotesi media'].transform('sum')
+df['Tot Ipotesi bassa'] = df.groupby(['Anno', 'Quartiere'])['Ipotesi bassa'].transform('sum')
 
 print(df)
