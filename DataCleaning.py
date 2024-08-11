@@ -11,3 +11,6 @@ print(df.head())
 
 #Informazioni generali
 print(df.info())
+
+#Statistiche descrittive
+print(df.describe())
