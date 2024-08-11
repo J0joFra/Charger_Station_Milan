@@ -5,3 +5,6 @@ import numpy as np
 #Importazione Dataset
 file_path = r"Comune-di-Milano.csv"
 df = pd.read_csv(file_path, encoding='ISO-8859-1')
+
+#Prime righe del dataset
+print(df.head())
