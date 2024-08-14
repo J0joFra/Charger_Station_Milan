@@ -21,3 +21,4 @@ df['Tot Ipotesi media'] = df.groupby(['Anno', 'Quartiere', 'Genere'])['Ipotesi m
 df['Tot Ipotesi bassa'] = df.groupby(['Anno', 'Quartiere', 'Genere'])['Ipotesi bassa'].transform('sum')
 
 print(df)
+
